@@ -1,0 +1,13 @@
+
+Usage: ./AnalyzeSyntheticLethal.sh [OPTIONS] -cc -s=<FASTQ FILE> -r=<REPLICATE NUMBER> -n=<SCREENNAME>
+
+Option		GNU long option		Meaning
+-h, -?		-- help			display help
+-R 		--replicate		replicate number: 1, 2, 3 or 4
+-S		--seq			followed by full path to fastq(.gz) file of sample
+-N		--name			any name you like for the screenname, if you want to analyze a new replicate for an existing screen, make sure to use the same name
+-C              --controlcreation       Run pipeline in 'control creation mode'
+
+--- Examples ---
+Standard run, with compression of intermediate files:
+./AnalyzeSyntheticLethal.sh --low=/data/sequence_reads.fastq.gz --replicate=1 --name=screenname

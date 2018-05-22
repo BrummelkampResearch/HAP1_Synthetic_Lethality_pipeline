@@ -1,0 +1,4 @@
+# Exlude these files and dirs
+.git/
+.idea/ # Pycharm stuff
+
